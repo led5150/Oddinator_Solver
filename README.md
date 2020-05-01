@@ -2,7 +2,7 @@
 This short c++ program solves the Oddinator Riddle from Reddit
 
 
-~~~   Here is the riddle!  ~~~
+##   Here is the riddle!  ##
 
 1000 people are lined up in front of a demon named “Oddinator”. 
 The odd numbered people in that line are eaten by the demon Oddinator. 
@@ -14,7 +14,7 @@ Can you figure out which place in line the lone survivor of the
 original 1000 people had to ensure his/her survival?
 
 
-~~~  End Riddle  ~~~
+##  End Riddle  ##
 
 Try to solve it!  Or just run my code! : )
 (hint, try it on a queue of just 10 people first...)
