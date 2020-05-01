@@ -17,6 +17,7 @@ original 1000 people had to ensure his/her survival?
 ##  End Riddle  ##
 
 Try to solve it!  Or just run my code! : )
+
 Hint: try it on a queue of just 10 people first...)
 
 The code uses a very simple struct to represent the poor souls
