@@ -74,10 +74,3 @@ vector<person> line_em_up(int num_people)
     }
     return queue;
 }
-
-void print(vector<person> &people)
-{
-    for (size_t i = 0; i < people.size(); i++) {
-        cout << people[i].orig_index << " ";
-    }
-}
