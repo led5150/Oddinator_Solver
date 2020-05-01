@@ -28,7 +28,7 @@ then creates a shorter queue until there is only one person remaining.
 It then simply returns the value that was stored in the struct for this
 lucky, lucky soul!
 
-You can change the size of the queue to test differnt size lines of
+You can change the size of the queue to test different sized lines of
 people by changing the value that is passed into the line_em_up() function
 in main(). 
 
