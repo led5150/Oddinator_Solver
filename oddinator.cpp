@@ -34,6 +34,19 @@ int main ()
     return 0;
 }
 
+// A recursive function that takes a vector of people and finds who would
+// survive the Oddinator!
+int find_survivor(vector<person> &people)
+{
+    if (people.size() == 1) {
+        return people[0].orig_index;
+    } else {
+        vector<person> surviving_people = Oddinator_Eats(people);
+        return find_survivor(surviving_people);
+    }
+}
+
+
 // The Oddinator Eats!!!  Every person in an "odd" index is eaten, and
 // peple in "even" indexes survive.  We have to flip the logic, however, 
 // because of 0 indexing, so we use mod 2 == 1 to find even survivors.
@@ -48,17 +61,6 @@ vector<person> Oddinator_Eats(vector<person> &people)
     return survivors;
 }
 
-// A function that takes a vector of people and finds who would
-// survive the Oddinator!
-int find_survivor(vector<person> &people)
-{
-    if (people.size() == 1) {
-        return people[0].orig_index;
-    } else {
-        vector<person> surviving_people = Oddinator_Eats(people);
-        return find_survivor(surviving_people);
-    }
-}
 
 // This function takes an integer of the number of people to line up in the
 // queue.  It creates people and stores their original index number + 1 
